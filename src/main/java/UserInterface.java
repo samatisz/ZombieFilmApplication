@@ -50,7 +50,7 @@ public class UserInterface {
                     showPreviouslyWatchedListRequest();
                     break;
                 case 6:
-                    addToWatchListRequest();
+                    addToWatchListRequest(); //this can show watch list as well
                     break;
                 case 7:
                     removeFromWatchListRequest();
