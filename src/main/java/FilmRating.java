@@ -43,10 +43,7 @@ public class FilmRating {
                     addSettingRating();
                     break;
                 case 6:
-                    sumRating();
-                    break;
-                case 7:
-                    addRatingToFilm();
+                    sumRatingAndAdd();
                     break;
                 default:
                     System.out.println("Error, please try again!");
@@ -70,27 +67,11 @@ public class FilmRating {
     public void addSettingRating() {
     }
 
-    public void sumRating() {
+    public void sumRatingAndAdd() {
+        // Calculate the average rating
     }
 
-    public void addRatingToFilm() {
-    }
 }
 
-
-//     Get ratings from the user
-//    double fearFactor = getRating(scanner, "Fear Factor");
-//    double enjoyability = getRating(scanner, "Enjoyability");
-//    double storyline = getRating(scanner, "Storyline");
-//    double specialEffects = getRating(scanner, "Special Effects");
-//
-//    // Calculate the average rating
-//    double averageRating = (fearFactor + enjoyability + storyline + characterDevelopment + specialEffects) / 5;
-//       // System.out.printf("Overall Rating: %.2f/10%n", averageRating);
-//
-//    // private static double getRating(Scanner scanner, String factorName) {
-//    System.out.print(factorName + ": ");
-//    return scanner.nextDouble();
-//}
 
 
