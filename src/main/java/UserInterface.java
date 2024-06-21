@@ -4,7 +4,6 @@ public class UserInterface {
 
     private Film film;
     private Scanner myScanner;
-    private WatchList watchList = new WatchList();
 
     public UserInterface() {
         myScanner = new Scanner(System.in);
@@ -54,7 +53,27 @@ public class UserInterface {
     }
 
     public void addToWatchListRequest() {
+        Scanner zomScanner = new Scanner(System.in);
+        System.out.println("Please enter the information of the film you would like to add.");
+        System.out.println("Title: ");
+        String title = zomScanner.nextLine();
+        System.out.println("Director: ");
+        String director = zomScanner.nextLine();
+        System.out.println("Year of release: ");
+        int year = zomScanner.nextInt();
+        System.out.println("Country of Origin: ");
+        String country = zomScanner.nextLine();
+        System.out.println("Language: ");
+        String language = zomScanner.nextLine();
 
+        System.out.println("The film you are adding: \n");
+        System.out.println("Title: " + title +
+                " | Director: " + director +
+                " | Year of Release: " + year +
+                " | Country: " + country +
+                " | Language: " + language);
+
+        zomScanner.close();
     }
 
     public void removeFromWatchListRequest() {
@@ -118,13 +137,13 @@ public class UserInterface {
     public void searchByTitle() {
     }
 
-    public void searchByDirectorRequest(){
+    public void searchByDirectorRequest() {
     }
 
-    public void searchByCountryOfOriginRequest(){
+    public void searchByCountryOfOriginRequest() {
     }
 
-    public void searchByLanguageRequest(){
+    public void searchByLanguageRequest() {
     }
 
     public void addToSeenMoviesRequest() {

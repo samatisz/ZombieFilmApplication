@@ -1,4 +1,5 @@
 public class Film {
+    private int filmId;
     private String filmTitle;
     private String directorName;
     private int yearOfRelease;
@@ -9,7 +10,8 @@ public class Film {
     private String imdbSummary;
     private int myRating;
 
-    public Film(String filmTitle, String directorName, int yearOfRelease, int lengthOfFilm, String countryOfOrigin, String language, int imdbRating, String imdbSummary, int myRating) {
+    public Film(int filmId, String filmTitle, String directorName, int yearOfRelease, int lengthOfFilm, String countryOfOrigin, String language, int imdbRating, String imdbSummary, int myRating) {
+        this.filmId = filmId;
         this.filmTitle = filmTitle;
         this.directorName = directorName;
         this.yearOfRelease = yearOfRelease;
@@ -19,6 +21,10 @@ public class Film {
         this.imdbRating = imdbRating;
         this.imdbSummary = imdbSummary;
         this.myRating = myRating;
+    }
+
+    public int getFilmId() {
+        return filmId;
     }
 
     public String getFilmTitle() {
@@ -57,11 +63,11 @@ public class Film {
         return myRating;
     }
 
-
     @Override
     public String toString() {
         return "Film{" +
-                "filmTitle='" + filmTitle + '\'' +
+                "filmId=" + filmId +
+                ", filmTitle='" + filmTitle + '\'' +
                 ", directorName='" + directorName + '\'' +
                 ", yearOfRelease=" + yearOfRelease +
                 ", lengthOfFilm=" + lengthOfFilm +
