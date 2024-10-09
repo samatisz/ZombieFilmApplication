@@ -23,6 +23,7 @@ public class Film {
         this.myRating = myRating;
     }
 
+    //want film id to be automatic
     public int getFilmId() {
         return filmId;
     }

@@ -13,7 +13,7 @@ public class UserInterface {
     }
     //display goes here, switch case
     //options and gets
-    public void watchListDisplayMenu(){
+    public void watchListMenu(){
         while (true) {
             System.out.println("Welcome to Zombie Watch List!");
             System.out.println("All films that have yet to be watched are complied here.");
@@ -39,7 +39,7 @@ public class UserInterface {
                     removeFromWatchListRequest();
                     break;
                 case 4:
-                    exitWatchListDisplayRequest();
+                    exitWatchListDisplayRequest(); //this needs to be changed to just an exit
                     break;
                 default:
                     System.out.println("Invalid, please try again!");
@@ -49,6 +49,7 @@ public class UserInterface {
     }
 
     public void displayWatchListRequest(){
+        // will need an array list
 
     }
 
@@ -77,12 +78,13 @@ public class UserInterface {
     }
 
     public void removeFromWatchListRequest() {
+        System.out.println("Please enter the ID number for the film you would like to remove.");
 
     }
 
 
     public void exitWatchListDisplayRequest() {
-
+//i don't need this, just need to make an exit
     }
 
     public void seenListDisplayMenu(){
